@@ -21,4 +21,5 @@ function render() {
   const container = document.getElementById('container');
 }
 
-let candyStore = createStore()
+let candyStore = createStore(candyReducer);
+candyStore.dispatch("@@INIT");
