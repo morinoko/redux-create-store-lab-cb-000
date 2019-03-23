@@ -8,3 +8,6 @@ function candyReducer(state = {candy: []}, action) {
 }
 
 export default candyReducer;
+
+let candyStore = createStore(candyReducer);
+candyStore.dispatch({ type: "@@INIT"});
