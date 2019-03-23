@@ -1,5 +1,3 @@
-import {createStore} from '../createStore';
-
 function candyReducer(state = {candy: []}, action) {
   switch (action.type) {
     case 'ADD_CANDY':
@@ -10,6 +8,3 @@ function candyReducer(state = {candy: []}, action) {
 }
 
 export default candyReducer;
-
-let candyStore = createStore(candyReducer);
-candyStore.dispatch({ type: '@@INIT' });
