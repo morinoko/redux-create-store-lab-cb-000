@@ -7,6 +7,7 @@ export default function createStore(reducer) {
     render();
   }
   
+  // Set the initial state, as defined in the reducer
   dispatch({type: '@@INIT'});
   
   function getState() {
