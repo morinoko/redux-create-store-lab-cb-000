@@ -1,4 +1,4 @@
-
+import {createStore} from './createStore';
 
 function countReducer(state = 0, action) {
   switch (action.type) {
@@ -10,5 +10,8 @@ function countReducer(state = 0, action) {
       return state;
   }
 }
+
+let countStore = createStore(countReducer);
+countStore.dispatch({type: '@@INIT'});
 
 export default countReducer;

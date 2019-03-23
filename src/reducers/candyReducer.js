@@ -1,4 +1,4 @@
-import createStore from './../createStore';
+import {createStore} from '../createStore';
 
 function candyReducer(state = {candy: []}, action) {
   switch (action.type) {
@@ -12,4 +12,4 @@ function candyReducer(state = {candy: []}, action) {
 export default candyReducer;
 
 let candyStore = createStore(candyReducer);
-candyStore.dispatch({ type: "@@INIT"});
+candyStore.dispatch({ type: '@@INIT' });
