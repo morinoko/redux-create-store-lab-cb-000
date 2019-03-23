@@ -22,4 +22,4 @@ function render() {
 }
 
 let candyStore = createStore(candyReducer);
-candyStore.dispatch("@@INIT");
+candyStore.dispatch({ type: "@@INIT"});
